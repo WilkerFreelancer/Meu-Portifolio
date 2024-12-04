@@ -1,228 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Web site</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-    <!-- Box Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Custom JavaScript -->
-    <link rel="stylesheet" href="js/script.js">
+    <meta name="description" content="Currículo profissional de Wilker, Designer Gráfico e Editor de Vídeo.">
+    <title>Wilker - Designer Gráfico & Editor de Vídeo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <audio id="lofiMusic" loop>
+        <source src="Gospel songs to relax  lofi hip hop radio Jazz  Beats to chill .mp3" type="audio/mp3">
+        Seu navegador não suporta a tag audio.
+    </audio>
+    <button onclick="document.getElementById('lofiMusic').play();">Clique para tocar a música</button>
+    
+    <!-- Header -->
     <header>
-        <a href="#" class="logo">Portfolio</a>
-        <div class="nav">
-            <a href="#home">Home</a>
-            <a href="#service">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+        <div class="logo">Wilker</div>
+        <div class="menu-hamburguer" id="menuHamburguer">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
+        <nav class="nav" id="navMenu">
+            <a href="#about">Sobre</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contact">Contato</a>
+            <a href="#testimonials">Depoimentos</a>
+        </nav>
     </header>
-    <!-- Home Section -->
-     <section class="home" id="home">
-        <div class="home-content">
-            <h3>Buneas, I'm</h3>
-            <h1>Wilker Junio</h1>
-            <h3>Full- Stack <span>Developer</span> </h3>
 
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, veniam! Voluptatum cupiditate totam quae explicabo deleniti doloribus eligendi libero, alias aliquid, labore minus quia quam expedita laudantium praesentium a facilis.
-            </p>
-            <div class="social-midia">
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#"><i class='bx bxl-behance'></i></a>
-     
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Olá, sou <span>Wilker</span></h1>
+            <p>Designer Gráfico & Editor de Vídeo, com experiência em publicidade.</p>
+            <a href="#contact" class="btn">Vamos Trabalhar Juntos</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="photo-container">
+                <img src="sua-foto.jpg" alt="Wilker" class="about-photo">
             </div>
-            <div>
-                <a href="#" class="btn"> Download CV</a>
+            <div class="about-text">
+                <h2>Sobre Mim</h2>
+                <p>Sou um profissional criativo com paixão pela comunicação visual e edição de vídeos. Minha missão é entregar soluções visuais impactantes que transmitam a mensagem de forma clara e eficaz.</p>
             </div>
         </div>
+    </section>
 
-        <!-- home img -->
-         <div class="home-img">
-            <img src="img/Profile.png" alt="Profile Picture">
-         </div>
-     </section>
-    <!-- /Home Section -->
-
-    <!-- Service Section -->
-     <section class="services" id="service">
-        <h2>Our <span>Services</span></h2>
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>web development</h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, ad consectetur suscipit quod saepe fugiat iusto id consequuntur rerum velit voluptatum quam vel magni eveniet, at placeat, neque architecto facilis enim doloremque error! Corrupti assumenda blanditiis quaerat et, eos fuga reiciendis nulla tempora, dolor molestiae exercitationem ex voluptatibus in deserunt?
-                </p>
-                <a href="#" class="btn"> Read More</a>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <span>Design Gráfico</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;">90%</div>
+                </div>
             </div>
-            <!--  -->
-            <div class="services-box">
-                <i class='bx bx-code-curly' ></i>
-                <h3>back end development</h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, ad consectetur suscipit quod saepe fugiat iusto id consequuntur rerum velit voluptatum quam vel magni eveniet, at placeat, neque architecto facilis enim doloremque error! Corrupti assumenda blanditiis quaerat et, eos fuga reiciendis nulla tempora, dolor molestiae exercitationem ex voluptatibus in deserunt?
-                </p>
-                <a href="#" class="btn"> Read More</a>
+            <div class="skill">
+                <span>Edição de Vídeo</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 85%;">85%</div>
+                </div>
             </div>
-            <!--  -->
-            <div class="services-box">
-                <i class='bx bxs-videos' ></i>
-                <h3>Editor</h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, ad consectetur suscipit quod saepe fugiat iusto id consequuntur rerum velit voluptatum quam vel magni eveniet, at placeat, neque architecto facilis enim doloremque error! Corrupti assumenda blanditiis quaerat et, eos fuga reiciendis nulla tempora, dolor molestiae exercitationem ex voluptatibus in deserunt?
-                </p>
-                <a href="#" class="btn"> Read More</a>
+            <div class="skill">
+                <span>Publicidade</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
             </div>
         </div>
-     </section>
-    <!-- /Service Section -->
+    </section>
 
     <!-- Portfolio Section -->
-     <section class="portfolio" id="portfolio">
-        <h2>Latest <span>Projects</span></h2>
-        <!-- 1 -->
-        <div class="portfolio-container">
-
-            <div class="portfolio-box">
-
-                <img src="img/01.jpg" alt="portfolio 1">
-                <div class="portfolio-layer">
-                    <h4>Web Development</h4>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam in unde eum similique repellendus, blanditiis eligendi ut libero laborum!</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+    <section id="portfolio" class="portfolio">
+        <h2>Meu Portfólio</h2>
+        <div class="portfolio-gallery">
+            <div class="card">
+                <img src="portfolio1.jpg" alt="Portfólio 1">
+                <div class="card-content">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do projeto 1.</p>
                 </div>
             </div>
-                    <!-- 2 -->
-        <div class="portfolio-container">
-
-            <div class="portfolio-box">
-
-                <img src="img/02.jpg" alt="portfolio 2">
-                <div class="portfolio-layer">
-                    <h4>Web Development</h4>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam in unde eum similique repellendus, blanditiis eligendi ut libero laborum!</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+            <div class="card">
+                <img src="portfolio2.jpg" alt="Portfólio 2">
+                <div class="card-content">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do projeto 2.</p>
                 </div>
             </div>
-
-                    <!-- 3 -->
-        <div class="portfolio-container">
-
-            <div class="portfolio-box">
-
-                <img src="img/03.jpg" alt="portfolio 3">
-                <div class="portfolio-layer">
-                    <h4>Web Development</h4>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam in unde eum similique repellendus, blanditiis eligendi ut libero laborum!</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-             <!-- 4 -->
-        <div class="portfolio-container">
-
-            <div class="portfolio-box">
-
-                <img src="img/04.jpg" alt="portfolio 4">
-                <div class="portfolio-layer">
-                    <h4>Web Development</h4>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam in unde eum similique repellendus, blanditiis eligendi ut libero laborum!</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-                    <!-- 5 -->
-        <div class="portfolio-container">
-
-            <div class="portfolio-box">
-
-                <img src="img/05.jpg" alt="portfolio 5">
-                <div class="portfolio-layer">
-                    <h4>Web Development</h4>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam in unde eum similique repellendus, blanditiis eligendi ut libero laborum!</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-                    <!-- 6 -->
-        <div class="portfolio-container">
-
-            <div class="portfolio-box">
-
-                <img src="img/06.jpg" alt="portfolio 6">
-                <div class="portfolio-layer">
-                    <h4>Web Development</h4>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam in unde eum similique repellendus, blanditiis eligendi ut libero laborum!</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+            <div class="card">
+                <img src="portfolio3.jpg" alt="Portfólio 3">
+                <div class="card-content">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição do projeto 3.</p>
                 </div>
             </div>
         </div>
-     </section>
-    <!-- /Portfolio Section -->
+    </section>
 
-     <!-- Contact Section -->
-      <section class="contact" id="contact">
-        <h2>Contact <span>Me!</span></h2>
-
-        <form >
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="E-mail">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Entre em Contato</h2>
+                <form action="enviar-formulario.php" method="POST">
+                    <input type="text" name="nome" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                    <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-            
-
-            <div class="input-box">
-                <input type="tel" placeholder="Phone number">
-                <input type="text" placeholder="Subject">
+            <div class="qrcode-container">
+                <h2>Conecte-se com meu QR Code</h2>
+                <img src="qrcode.png" alt="QR Code" class="qrcode">
+                <p>Escaneie o QR Code para me adicionar no WhatsApp ou acessar meu portfólio.</p>
             </div>
+        </div>
+    </section>
 
-            <textarea cols="30" rows="8" placeholder="Message"></textarea>
-        
-            <a href="#" class="btn">Send Message</a>
-        </form>
-        
-      </section>
-     <!-- /Contact Section -->
+    <!-- Footer -->
+    <footer>
+        <p>Wilker &copy; 2024 | Todos os direitos reservados.</p>
+        <p><a href="https://www.linkedin.com/in/wilker" target="_blank">LinkedIn</a> | <a href="mailto:wilker@email.com">Email</a></p>
+    </footer>
 
-      <!-- Abount Section -->
-       <section class="about" id="about">
-
-<div class="about-img">
-    <img src="img/Profile.png" alt="About Me"> 
-</div>
-      
-
-  <section class="about content">
-    <h3>About Me</h3>
-
-    <h1>Full-Stack <span>Developer</span></h1>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi optio vitae quis in ullam asperiores, repellendus voluptates maxime ab voluptatibus dicta reiciendis sequi molestiae modi, necessitatibus totam assumenda doloremque ipsum?</p>
-
-    <a href="#" class="btn">Read More</a>
-</section>
-<!-- /About Section -->
-
-<footer>
-    <p>Copyright &copy; 2023 By </buenas>. Wilker all rights reserved.</p>
-</footer>
+    <script>
+        // Script para o menu hamburguer
+        document.getElementById('menuHamburguer').addEventListener('click', function() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
