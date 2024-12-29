@@ -4,86 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronograma Estético</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            height: 100vh;
-        }
-
-        .container {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 90%;
-            max-width: 900px;
-            overflow-y: auto;
-            max-height: 80vh;
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .cronograma {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .week {
-            background-color: #f0f8ff;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .day {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 5px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .day h3 {
-            margin: 0;
-            color: #007bff;
-        }
-
-        .item {
-            margin: 5px 0;
-            color: #555;
-        }
-
-        .item-time {
-            font-weight: bold;
-            color: #333;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
         <h1>Cronograma Estético - Janeiro</h1>
-
-        <!-- Área para o cronograma gerado dinamicamente -->
         <div id="cronograma" class="cronograma"></div>
     </div>
 
     <script>
         // Texto do cronograma
-        const cronogramaTexto = `
-       Janeiro - Recomeços e Cuidados Pós-Festas
+        const cronogramaTexto = `Janeiro - Recomeços e Cuidados Pós-Festas
 1 a 7 de Janeiro - Detox e Cuidados Pós-Festas
 Dia 1 (Segunda-feira):
 Feed: “Bem-vindo 2024! Comece o ano com tratamentos detox para o corpo e mente.”
@@ -1286,43 +1218,57 @@ Stories: Faça uma contagem regressiva para o próximo ano e compartilhe os plan
 
 
 
- `;
+`;
 
-        // Função para processar o texto do cronograma
+        // Função para processar o cronograma
         function processarCronograma(texto) {
             const cronogramaContainer = document.getElementById('cronograma');
             cronogramaContainer.innerHTML = ''; // Limpa o cronograma existente
 
             const semanas = texto.split('Dia'); // Divide o texto nas semanas
 
-            semanas.forEach(semana => {
+            semanas.forEach((semana, semanaIndex) => {
                 if (semana.trim()) {
-                    // Identifica as semanas e os dias
                     const semanaDiv = document.createElement('div');
                     semanaDiv.classList.add('week');
+                    semanaDiv.setAttribute('data-week', semanaIndex); // Atribui um ID único para cada semana
 
                     const semanaHeader = semana.split('\n')[0]; // Pega o título da semana
                     semanaDiv.innerHTML = `<h2>${semanaHeader}</h2>`;
 
                     const dias = semana.split('\n').slice(1).filter(dia => dia.trim() !== ''); // Pega os dias
 
-                    dias.forEach(dia => {
+                    dias.forEach((dia, index) => {
                         const diaDiv = document.createElement('div');
                         diaDiv.classList.add('day');
                         
                         const diaInfo = dia.split(':')[0]; // Pega o nome do dia (ex: "Dia 1 (Segunda-feira)")
                         diaDiv.innerHTML = `<h3>${diaInfo}</h3>`;
 
-                        // Pega as atividades para cada dia
                         const atividades = dia.split(':').slice(1).join(':').split('\n').filter(atividade => atividade.trim() !== '');
-
-                        atividades.forEach(atividade => {
+                        const atividadesDiv = document.createElement('div');
+                        
+                        atividades.forEach((atividade, activityIndex) => {
                             const atividadeDiv = document.createElement('div');
                             atividadeDiv.classList.add('item');
-                            atividadeDiv.innerHTML = `<p>${atividade}</p>`;
-                            diaDiv.appendChild(atividadeDiv);
+                            
+                            const checkbox = document.createElement('input');
+                            checkbox.type = 'checkbox';
+                            checkbox.classList.add('checkbox');
+                            checkbox.id = `checkbox-${semanaIndex}-${index}-${activityIndex}`;
+                            checkbox.checked = getCheckboxState(checkbox.id); // Verifica o estado armazenado
+
+                            const atividadeText = document.createElement('span');
+                            atividadeText.textContent = atividade;
+
+                            atividadeDiv.appendChild(checkbox);
+                            atividadeDiv.appendChild(atividadeText);
+                            atividadesDiv.appendChild(atividadeDiv);
+
+                            checkbox.onclick = () => handleCheckboxChange(checkbox, checkbox.id, semanaDiv);
                         });
 
+                        diaDiv.appendChild(atividadesDiv);
                         semanaDiv.appendChild(diaDiv);
                     });
 
@@ -1331,10 +1277,45 @@ Stories: Faça uma contagem regressiva para o próximo ano e compartilhe os plan
             });
         }
 
-        // Processa o cronograma assim que a página for carregada
+        // Função para salvar o estado do checkbox no localStorage
+        function saveCheckboxState(checkboxId, isChecked) {
+            localStorage.setItem(checkboxId, isChecked);  // Salva o estado do checkbox como verdadeiro ou falso
+        }
+
+        // Função para recuperar o estado do checkbox do localStorage
+        function getCheckboxState(checkboxId) {
+            return localStorage.getItem(checkboxId) === 'true'; // Retorna true ou false
+        }
+
+        // Função que trata a mudança de estado do checkbox
+        function handleCheckboxChange(checkbox, checkboxId, semanaDiv) {
+            const isChecked = checkbox.checked;
+            if (isChecked) {
+                checkbox.parentElement.classList.add('completed');
+            } else {
+                checkbox.parentElement.classList.remove('completed');
+            }
+            saveCheckboxState(checkboxId, isChecked); // Salva o estado do checkbox
+
+            if (verificarSemanaCompleta(semanaDiv)) {
+                semanaDiv.classList.add('hidden'); // Oculta a semana se todas as atividades foram concluídas
+            }
+        }
+
+        // Função que verifica se todas as tarefas de uma semana foram completadas
+        function verificarSemanaCompleta(semanaDiv) {
+            const checkboxes = semanaDiv.querySelectorAll('.checkbox');
+            const totalCheckboxes = checkboxes.length;
+            const totalConcluidos = Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
+
+            return totalCheckboxes === totalConcluidos;
+        }
+
+        // Inicializa o cronograma ao carregar a página
         window.onload = () => {
             processarCronograma(cronogramaTexto);
         };
+
     </script>
 
 </body>
