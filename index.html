@@ -52,7 +52,6 @@
             padding: 15px;
             margin: 5px 0;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s;
         }
 
         .day h3 {
@@ -70,32 +69,6 @@
             color: #333;
         }
 
-        .highlight {
-            background-color: #ffcccc; /* Cor para o dia atual */
-        }
-
-        .hidden {
-            display: none; /* Oculta os dias passados */
-        }
-
-        .show-button {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .show-button button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        .show-button button:hover {
-            background-color: #0056b3;
-        }
     </style>
 </head>
 <body>
@@ -105,17 +78,12 @@
 
         <!-- Área para o cronograma gerado dinamicamente -->
         <div id="cronograma" class="cronograma"></div>
-
-        <!-- Botão para mostrar o restante do cronograma -->
-        <div class="show-button">
-            <button id="show-button">Mostrar restante do cronograma</button>
-        </div>
     </div>
 
     <script>
         // Texto do cronograma
         const cronogramaTexto = `
-      Janeiro - Recomeços e Cuidados Pós-Festas
+       Janeiro - Recomeços e Cuidados Pós-Festas
 1 a 7 de Janeiro - Detox e Cuidados Pós-Festas
 Dia 1 (Segunda-feira):
 Feed: “Bem-vindo 2024! Comece o ano com tratamentos detox para o corpo e mente.”
@@ -1318,7 +1286,7 @@ Stories: Faça uma contagem regressiva para o próximo ano e compartilhe os plan
 
 
 
-`;
+ `;
 
         // Função para processar o texto do cronograma
         function processarCronograma(texto) {
@@ -1327,12 +1295,7 @@ Stories: Faça uma contagem regressiva para o próximo ano e compartilhe os plan
 
             const semanas = texto.split('Dia'); // Divide o texto nas semanas
 
-            // Obtém a data atual
-            const hoje = new Date();
-            const diaAtual = hoje.getDate(); // Pega o dia do mês (1 a 31)
-            const mesAtual = hoje.getMonth() + 1; // Pega o mês (1 a 12)
-
-            semanas.forEach((semana, index) => {
+            semanas.forEach(semana => {
                 if (semana.trim()) {
                     // Identifica as semanas e os dias
                     const semanaDiv = document.createElement('div');
@@ -1343,10 +1306,10 @@ Stories: Faça uma contagem regressiva para o próximo ano e compartilhe os plan
 
                     const dias = semana.split('\n').slice(1).filter(dia => dia.trim() !== ''); // Pega os dias
 
-                    dias.forEach((dia, diaIndex) => {
+                    dias.forEach(dia => {
                         const diaDiv = document.createElement('div');
                         diaDiv.classList.add('day');
-
+                        
                         const diaInfo = dia.split(':')[0]; // Pega o nome do dia (ex: "Dia 1 (Segunda-feira)")
                         diaDiv.innerHTML = `<h3>${diaInfo}</h3>`;
 
@@ -1360,17 +1323,6 @@ Stories: Faça uma contagem regressiva para o próximo ano e compartilhe os plan
                             diaDiv.appendChild(atividadeDiv);
                         });
 
-                        // Destaca o dia atual
-                        const diaData = diaInfo.split(' ')[1]; // Pega o número do dia (ex: "Dia 1")
-                        if (parseInt(diaData) === diaAtual && mesAtual === 1) {
-                            diaDiv.classList.add('highlight'); // Marca o dia atual
-                        }
-
-                        // Oculta os dias passados ou futuros
-                        if (parseInt(diaData) < diaAtual || mesAtual !== 1) {
-                            diaDiv.classList.add('hidden'); // Oculta os dias passados
-                        }
-
                         semanaDiv.appendChild(diaDiv);
                     });
 
@@ -1379,22 +1331,9 @@ Stories: Faça uma contagem regressiva para o próximo ano e compartilhe os plan
             });
         }
 
-        // Função para mostrar o restante do cronograma
-        function mostrarRestante() {
-            // Remove a classe 'hidden' de todos os dias
-            const diasOcultos = document.querySelectorAll('.hidden');
-            diasOcultos.forEach(dia => dia.classList.remove('hidden'));
-            
-            // Esconde o botão de "Mostrar restante"
-            document.getElementById('show-button').style.display = 'none';
-        }
-
         // Processa o cronograma assim que a página for carregada
         window.onload = () => {
             processarCronograma(cronogramaTexto);
-
-            // Adiciona o evento para o botão de desocultar
-            document.getElementById('show-button').onclick = mostrarRestante;
         };
     </script>
 
