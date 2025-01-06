@@ -1,0 +1,1481 @@
+var simplemaps_countrymap_mapdata={
+  main_settings: {
+   //General settings
+    width: "responsive", //'700' or 'responsive'
+    background_color: "#FFFFFF",
+    background_transparent: "yes",
+    border_color: "#ffffff",
+    
+    //State defaults
+    state_description: "State description",
+    state_color: "#0D6C94",
+    state_hover_color: "#3B729F",
+    state_url: "",
+    border_size: 1.5,
+    all_states_inactive: "no",
+    all_states_zoomable: "yes",
+    
+    //Location defaults
+    location_description: "Location description",
+    location_url: "",
+    location_color: "#07245b",
+    location_opacity: "0.1",
+    location_hover_opacity: 1,
+    location_size: "5",
+    location_type: "circle",
+    location_image_source: "frog.png",
+    location_border_color: "#FFFFFF",
+    location_border: 2,
+    location_hover_border: 2.5,
+    all_locations_inactive: "no",
+    all_locations_hidden: "no",
+    
+    //Label defaults
+    label_color: "#000000",
+    label_hover_color: "#ffffff",
+    label_size: "10",
+    label_font: "Arial",
+    label_display: "auto",
+    label_scale: "yes",
+    hide_labels: "no",
+    hide_eastern_labels: "no",
+   
+    //Zoom settings
+    zoom: "yes",
+    manual_zoom: "yes",
+    back_image: "no",
+    initial_back: "no",
+    initial_zoom: "BRRJ",
+    initial_zoom_solo: "yes",
+    region_opacity: 1,
+    region_hover_opacity: 0.6,
+    zoom_out_incrementally: "yes",
+    zoom_percentage: 0.99,
+    zoom_time: 0.5,
+    
+    //Popup settings
+    popup_color: "white",
+    popup_opacity: 0.9,
+    popup_shadow: 1,
+    popup_corners: 5,
+    popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
+    popup_nocss: "no",
+    
+    //Advanced settings
+    div: "map",
+    auto_load: "yes",
+    url_new_tab: "yes",
+    images_directory: "default",
+    fade_time: 0.1,
+    link_text: "View Website",
+    popups: "detect",
+    state_image_url: "",
+    state_image_position: "",
+    location_image_url: ""
+  },
+  state_specific: {
+    BRAC: {
+      name: "Acre",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRAL: {
+      name: "Alagoas",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRAM: {
+      name: "Amazonas",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRAP: {
+      name: "Amapá",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRBA: {
+      name: "Bahia",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRCE: {
+      name: "Ceará",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRDF: {
+      name: "Distrito Federal",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRES: {
+      name: "Espírito Santo",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRGO: {
+      name: "Goiás",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRMA: {
+      name: "Maranhão",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRMG: {
+      name: "Minas Gerais",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRMS: {
+      name: "Mato Grosso do Sul",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRMT: {
+      name: "Mato Grosso",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRPA: {
+      name: "Pará",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRPB: {
+      name: "Paraíba",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRPE: {
+      name: "Pernambuco",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRPI: {
+      name: "Piauí",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRPR: {
+      name: "Paraná",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRRJ: {
+      name: "Rio de Janeiro",
+      hide: "no",
+      inactive: "no"
+    },
+    BRRN: {
+      name: "Rio Grande do Norte",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRRO: {
+      name: "Rondônia",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRRR: {
+      name: "Roraima",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRRS: {
+      name: "Rio Grande do Sul",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRSC: {
+      name: "Santa Catarina",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRSE: {
+      name: "Sergipe",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRSP: {
+      name: "São Paulo",
+      hide: "yes",
+      inactive: "yes"
+    },
+    BRTO: {
+      name: "Tocantins",
+      hide: "yes",
+      inactive: "yes"
+    }
+  },
+  locations: {
+    "0": {
+      lat: -23.007,
+      lng: -44.313,
+      name: "Angra dos Reis",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-angra-dos-reis-rj"
+    },
+    "1": {
+      lat: -21.625,
+      lng: -42.102,
+      name: "Aperibé",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-aperibé-rj"
+    },
+    "2": {
+      lat: -22.877,
+      lng: -42.34,
+      name: "Araruama",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-araruama-rj"
+    },
+    "3": {
+      lat: -22.232,
+      lng: -43.101,
+      name: "Areal",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-areal-rj"
+    },
+    "4": {
+      lat: -22.768,
+      lng: -41.901,
+      name: "Armação dos Búzios",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-armação-dos-búzios-rj"
+    },
+    "5": {
+      lat: -22.955,
+      lng: -42.037,
+      name: "Arraial do Cabo",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-arraial-do-cabo-rj"
+    },
+    "6": {
+      lat: -22.464,
+      lng: -43.823,
+      name: "Barra do Piraí",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-barra-do-piraí-rj"
+    },
+    "7": {
+      lat: -22.541,
+      lng: -44.169,
+      name: "Barra Mansa",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-barra-mansa-rj"
+    },
+    "8": {
+      lat: -22.764,
+      lng: -43.4,
+      name: "Belford Roxo",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-belford-roxo-rj"
+    },
+    "9": {
+      lat: -7.8,
+      lng: -35.588,
+      name: "Bom Jardim",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-bom-jardim-rj"
+    },
+    "10": {
+      lat: -21.137,
+      lng: -41.677,
+      name: "Bom Jesus do Itabapoana",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-bom-jesus-do-itabapoana-rj"
+    },
+    "11": {
+      lat: -22.878,
+      lng: -42.022,
+      name: "Cabo Frio",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-cabo-frio-rj"
+    },
+    "12": {
+      lat: -22.464,
+      lng: -42.653,
+      name: "Cachoeiras de Macacu",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-cachoeiras-de-macacu-rj"
+    },
+    "13": {
+      lat: -21.576,
+      lng: -41.912,
+      name: "Cambuci",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-cambuci-rj"
+    },
+    "14": {
+      lat: -21.755,
+      lng: -41.324,
+      name: "Campos dos Goytacazes",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-campos-dos-goytacazes-rj"
+    },
+    "15": {
+      lat: -21.982,
+      lng: -42.364,
+      name: "Cantagalo",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-cantagalo-rj"
+    },
+    "16": {
+      lat: -22.186,
+      lng: -41.661,
+      name: "Carapebus",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-carapebus-rj"
+    },
+    "17": {
+      lat: -21.495,
+      lng: -41.617,
+      name: "Cardoso Moreira",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-cardoso-moreira-rj"
+    },
+    "18": {
+      lat: -21.934,
+      lng: -42.608,
+      name: "Carmo",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-carmo-rj"
+    },
+    "19": {
+      lat: -22.485,
+      lng: -42.203,
+      name: "Casimiro de Abreu",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-casimiro-de-abreu-rj"
+    },
+    "20": {
+      lat: -22.029,
+      lng: -43.204,
+      name: "Comendador Levy Gasparian",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-comendador-levy-gasparian-rj"
+    },
+    "21": {
+      lat: -22.083,
+      lng: -41.874,
+      name: "Conceição de Macabu",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-conceição-de-macabu-rj"
+    },
+    "22": {
+      lat: -22.015,
+      lng: -42.369,
+      name: "Cordeiro",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-cordeiro-rj"
+    },
+    "23": {
+      lat: -22.05,
+      lng: -42.525,
+      name: "Duas Barras",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-duas-barras-rj"
+    },
+    "24": {
+      lat: -22.787,
+      lng: -43.313,
+      name: "Duque de Caxias",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-duque-de-caxias-rj"
+    },
+    "25": {
+      lat: -22.549,
+      lng: -43.676,
+      name: "Engenheiro Paulo de Frontin",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-engenheiro-paulo-de-frontin-rj"
+    },
+    "26": {
+      lat: -22.521,
+      lng: -42.979,
+      name: "Guapimirim",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-guapimirim-rj"
+    },
+    "27": {
+      lat: -22.841,
+      lng: -42.224,
+      name: "Iguaba Grande",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-iguaba-grande-rj"
+    },
+    "28": {
+      lat: -22.748,
+      lng: -42.861,
+      name: "Itaboraí",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-itaboraí-rj"
+    },
+    "29": {
+      lat: -22.856,
+      lng: -43.774,
+      name: "Itaguaí",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-itaguaí-rj"
+    },
+    "30": {
+      lat: -21.424,
+      lng: -41.692,
+      name: "Italva",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-italva-rj"
+    },
+    "31": {
+      lat: -21.677,
+      lng: -42.081,
+      name: "Itaocara",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-itaocara-rj"
+    },
+    "32": {
+      lat: -21.193,
+      lng: -41.9,
+      name: "Itaperuna",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-itaperuna-rj"
+    },
+    "33": {
+      lat: -22.643,
+      lng: -43.656,
+      name: "Japeri",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-itatiaia-rj"
+    },
+    "34": {
+      lat: -21.208,
+      lng: -42.124,
+      name: "Laje do Muriaé",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-japeri-rj"
+    },
+    "35": {
+      lat: -22.372,
+      lng: -41.785,
+      name: "Macaé",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-laje-do-muriaé-rj"
+    },
+    "36": {
+      lat: -21.982,
+      lng: -42.251,
+      name: "Macuco",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-macaé-rj"
+    },
+    "37": {
+      lat: -22.661,
+      lng: -43.036,
+      name: "Magé",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-macuco-rj"
+    },
+    "38": {
+      lat: -22.961,
+      lng: -44.041,
+      name: "Mangaratiba",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-magé-rj"
+    },
+    "39": {
+      lat: -22.918,
+      lng: -42.819,
+      name: "Maricá",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-mangaratiba-rj"
+    },
+    "40": {
+      lat: -22.525,
+      lng: -43.731,
+      name: "Mendes",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-maricá-rj"
+    },
+    "41": {
+      lat: -22.457,
+      lng: -43.471,
+      name: "Miguel Pereira",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-mendes-rj"
+    },
+    "42": {
+      lat: -21.412,
+      lng: -42.197,
+      name: "Miracema",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-mesquita-rj"
+    },
+    "43": {
+      lat: -21.043,
+      lng: -41.978,
+      name: "Natividade",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-miguel-pereira-rj"
+    },
+    "44": {
+      lat: -22.81,
+      lng: -43.414,
+      name: "Nilópolis",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-miracema-rj"
+    },
+    "45": {
+      lat: -22.888,
+      lng: -43.115,
+      name: "Niterói",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-natividade-rj"
+    },
+    "46": {
+      lat: -22.282,
+      lng: -42.534,
+      name: "Nova Friburgo",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-nilópolis-rj"
+    },
+    "47": {
+      lat: -22.76,
+      lng: -43.451,
+      name: "Nova Iguaçu",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-niterói-rj"
+    },
+    "48": {
+      lat: -22.61,
+      lng: -43.711,
+      name: "Paracambi",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-nova-friburgo-rj"
+    },
+    "49": {
+      lat: -22.164,
+      lng: -43.291,
+      name: "Paraíba do Sul",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-nova-iguaçu-rj"
+    },
+    "50": {
+      lat: -23.22,
+      lng: -44.715,
+      name: "Paraty",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-paracambi-rj"
+    },
+    "51": {
+      lat: -22.421,
+      lng: -43.422,
+      name: "Paty do Alferes",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-paraíba-do-sul-rj"
+    },
+    "52": {
+      lat: -22.504,
+      lng: -43.182,
+      name: "Petrópolis",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-paraty-rj"
+    },
+    "53": {
+      lat: -22.518,
+      lng: -44,
+      name: "Pinheiral",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-paty-do-alferes-rj"
+    },
+    "54": {
+      lat: -22.631,
+      lng: -43.91,
+      name: "Piraí",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-petrópolis-rj"
+    },
+    "55": {
+      lat: -20.961,
+      lng: -42.037,
+      name: "Porciúncula",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-pinheiral-rj"
+    },
+    "56": {
+      lat: "-22.813",
+      lng: "-44.500",
+      name: "Porto Real",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-piraí-rj"
+    },
+    "57": {
+      lat: -22.409,
+      lng: "-44.100",
+      name: "Quatis",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-porciúncula-rj"
+    },
+    "58": {
+      lat: "-22.713",
+      lng: -43.558,
+      name: "Queimados",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-porto-real-rj"
+    },
+    "59": {
+      lat: -22.107,
+      lng: -41.473,
+      name: "Quissamã",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-quatis-rj"
+    },
+    "60": {
+      lat: -22.471,
+      lng: -44.45,
+      name: "Resende",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-queimados-rj"
+    },
+    "61": {
+      lat: -22.703,
+      lng: -42.594,
+      name: "Rio Bonito",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-quissamã-rj"
+    },
+    "62": {
+      lat: -22.412,
+      lng: -47.563,
+      name: "Rio Claro",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-resende-rj"
+    },
+    "63": {
+      lat: -22.166,
+      lng: -43.585,
+      name: "Rio das Flores",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-rio-bonito-rj"
+    },
+    "64": {
+      lat: -22.528,
+      lng: -41.942,
+      name: "Rio das Ostras",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-rio-claro-rj"
+    },
+    "65": {
+      lat: -22.912,
+      lng: -43.175,
+      name: "Rio de Janeiro",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-rio-das-flores-rj"
+    },
+    "66": {
+      lat: -21.956,
+      lng: -42.008,
+      name: "Santa Maria Madalena",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-rio-das-ostras-rj"
+    },
+    "67": {
+      lat: -21.539,
+      lng: -42.182,
+      name: "Santo Antônio de Pádua",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-rio-de-janeiro-rj"
+    },
+    "68": {
+      lat: -21.647,
+      lng: -41.745,
+      name: "São Fidélis",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-santa-maria-madalena-rj"
+    },
+    "69": {
+      lat: -21.474,
+      lng: -41.117,
+      name: "São Francisco de Itabapoana",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-santo-antônio-de-pádua-rj"
+    },
+    "70": {
+      lat: -22.823,
+      lng: -43.045,
+      name: "São Gonçalo",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-são-fidélis-rj"
+    },
+    "71": {
+      lat: -21.636,
+      lng: -41.046,
+      name: "São João da Barra",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-são-francisco-de-itabapoana-rj"
+    },
+    "72": {
+      lat: -22.802,
+      lng: -43.365,
+      name: "São João de Meriti",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-são-gonçalo-rj"
+    },
+    "73": {
+      lat: -21.361,
+      lng: -41.939,
+      name: "São José de Ubá",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-são-joão-da-barra-rj"
+    },
+    "74": {
+      lat: -22.153,
+      lng: -42.924,
+      name: "São José do Vale do Rio Preto",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-são-joão-de-meriti-rj"
+    },
+    "75": {
+      lat: -22.836,
+      lng: -42.104,
+      name: "São Pedro da Aldeia",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-são-josé-de-ubá-rj"
+    },
+    "76": {
+      lat: -21.956,
+      lng: -42.135,
+      name: "São Sebastião do Alto",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-são-josé-do-vale-do-rio-preto-rj"
+    },
+    "77": {
+      lat: -22.005,
+      lng: -42.932,
+      name: "Sapucaia",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-são-pedro-da-aldeia-rj"
+    },
+    "78": {
+      lat: -22.933,
+      lng: -42.496,
+      name: "Saquarema",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-são-sebastião-do-alto-rj"
+    },
+    "79": {
+      lat: -22.744,
+      lng: -43.701,
+      name: "Seropédica",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-sapucaia-rj"
+    },
+    "80": {
+      lat: -22.651,
+      lng: -42.392,
+      name: "Silva Jardim",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-saquarema-rj"
+    },
+    "81": {
+      lat: -22.045,
+      lng: -42.674,
+      name: "Sumidouro",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-seropédica-rj"
+    },
+    "82": {
+      lat: -22.73,
+      lng: -42.709,
+      name: "Tanguá",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-silva-jardim-rj"
+    },
+    "83": {
+      lat: -22.412,
+      lng: -42.967,
+      name: "Teresópolis",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-sumidouro-rj"
+    },
+    "84": {
+      lat: -22.063,
+      lng: -42.061,
+      name: "Trajano de Moraes",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-tanguá-rj"
+    },
+    "85": {
+      lat: -22.118,
+      lng: -43.212,
+      name: "Três Rios",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-teresópolis-rj"
+    },
+    "86": {
+      lat: -13.369,
+      lng: -39.071,
+      name: "Valença",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-trajano-de-moraes-rj"
+    },
+    "87": {
+      lat: -20.93,
+      lng: -41.869,
+      name: "Varre-Sai",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-três-rios-rj"
+    },
+    "88": {
+      lat: -22.405,
+      lng: -43.662,
+      name: "Vassouras",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-valença-rj"
+    },
+    "89": {
+      lat: -22.505,
+      lng: -44.094,
+      name: "Volta Redonda",
+      url: "https://lobosbr.com/conserto-video-game-rj/conserto-videogame-em-varresai-rj"
+    }
+  },
+  labels: {
+    "63": {
+      name: "Angra dos Reis",
+      x: "644.7",
+      y: "624",
+      parent_type: "location",
+      parent_id: "0",
+      display: "no"
+    },
+    "64": {
+      name: "Aperibé",
+      x: 688.2,
+      y: 593.9,
+      parent_type: "location",
+      parent_id: "1",
+      display: "no"
+    },
+    "65": {
+      name: "Araruama",
+      x: 683.5,
+      y: 621.2,
+      parent_type: "location",
+      parent_id: "2",
+      display: "no"
+    },
+    "66": {
+      name: "Areal",
+      x: 668.1,
+      y: 607.1,
+      parent_type: "location",
+      parent_id: "3",
+      display: "no"
+    },
+    "67": {
+      name: "Armação dos Búzios",
+      x: 692.3,
+      y: 618.8,
+      parent_type: "location",
+      parent_id: "4",
+      display: "no"
+    },
+    "68": {
+      name: "Arraial do Cabo",
+      x: 689.6,
+      y: 622.9,
+      parent_type: "location",
+      parent_id: "5",
+      display: "no"
+    },
+    "69": {
+      name: "Barra do Piraí",
+      x: 653.6,
+      y: 612.1,
+      parent_type: "location",
+      parent_id: "6",
+      display: "no"
+    },
+    "70": {
+      name: "Barra Mansa",
+      x: 646.6,
+      y: 613.8,
+      parent_type: "location",
+      parent_id: "7",
+      display: "no"
+    },
+    "71": {
+      name: "Belford Roxo",
+      x: "663.5",
+      y: "618.1",
+      parent_type: "location",
+      parent_id: "8",
+      display: "no"
+    },
+    "72": {
+      name: "Bom Jardim",
+      x: 819.5,
+      y: 305.3,
+      parent_type: "location",
+      parent_id: "9",
+      display: "no"
+    },
+    "73": {
+      name: "Bom Jesus do Itabapoana",
+      x: 696.8,
+      y: 583.4,
+      parent_type: "location",
+      parent_id: "10",
+      display: "no"
+    },
+    "74": {
+      name: "Cabo Frio",
+      x: 689.9,
+      y: 621.2,
+      parent_type: "location",
+      parent_id: "11",
+      display: "no"
+    },
+    "75": {
+      name: "Cachoeiras de Macacu",
+      x: 677.1,
+      y: 612.1,
+      parent_type: "location",
+      parent_id: "12",
+      display: "no"
+    },
+    "76": {
+      name: "Cambuci",
+      x: 692.1,
+      y: 592.9,
+      parent_type: "location",
+      parent_id: "13",
+      display: "no"
+    },
+    "77": {
+      name: "Campos dos Goytacazes",
+      x: 703.9,
+      y: 596.7,
+      parent_type: "location",
+      parent_id: "14",
+      display: "no"
+    },
+    "78": {
+      name: "Cantagalo",
+      x: 683,
+      y: "600.8",
+      parent_type: "location",
+      parent_id: "15",
+      display: "no"
+    },
+    "79": {
+      name: "Carapebus",
+      x: 697.1,
+      y: 606.1,
+      parent_type: "location",
+      parent_id: "16",
+      display: "no"
+    },
+    "80": {
+      name: "Cardoso Moreira",
+      x: 698,
+      y: 591.1,
+      parent_type: "location",
+      parent_id: "17",
+      display: "no"
+    },
+    "81": {
+      name: "Carmo",
+      x: 678.1,
+      y: 600.6,
+      parent_type: "location",
+      parent_id: "18",
+      display: "no"
+    },
+    "82": {
+      name: "Casimiro de Abreu",
+      x: 686.2,
+      y: 612.6,
+      parent_type: "location",
+      parent_id: "19",
+      display: "no"
+    },
+    "83": {
+      name: "Comendador Levy Gasparian",
+      x: 666.1,
+      y: 602.7,
+      parent_type: "location",
+      parent_id: "20",
+      display: "no"
+    },
+    "84": {
+      name: "Conceição de Macabu",
+      x: 692.8,
+      y: "604.5",
+      parent_type: "location",
+      parent_id: "21",
+      display: "no"
+    },
+    "85": {
+      name: "Cordeiro",
+      x: 682.9,
+      y: 602.4,
+      parent_type: "location",
+      parent_id: "22",
+      display: "no"
+    },
+    "86": {
+      name: "Duas Barras",
+      x: 679.7,
+      y: "603.8",
+      parent_type: "location",
+      parent_id: "23",
+      display: "no"
+    },
+    "87": {
+      name: "Duque de Caxias",
+      x: "665.9",
+      y: "618.8",
+      parent_type: "location",
+      parent_id: "24",
+      display: "no"
+    },
+    "88": {
+      name: "Engenheiro Paulo de Frontin",
+      x: 656.5,
+      y: "614.5",
+      parent_type: "location",
+      parent_id: "25",
+      display: "no"
+    },
+    "89": {
+      name: "Guapimirim",
+      x: 670.6,
+      y: 613.4,
+      parent_type: "location",
+      parent_id: "26",
+      display: "no"
+    },
+    "90": {
+      name: "Iguaba Grande",
+      x: 685.8,
+      y: 620.4,
+      parent_type: "location",
+      parent_id: "27",
+      display: "no"
+    },
+    "91": {
+      name: "Itaboraí",
+      x: 673,
+      y: 618.3,
+      parent_type: "location",
+      parent_id: "28",
+      display: "no"
+    },
+    "92": {
+      name: "Itaguaí",
+      x: 654.6,
+      y: 620.7,
+      parent_type: "location",
+      parent_id: "29",
+      display: "no"
+    },
+    "93": {
+      name: "Italva",
+      x: 696.5,
+      y: 589.6,
+      parent_type: "location",
+      parent_id: "30",
+      display: "no"
+    },
+    "94": {
+      name: "Itaocara",
+      x: 688.7,
+      y: 595,
+      parent_type: "location",
+      parent_id: "31",
+      display: "no"
+    },
+    "95": {
+      name: "Itaperuna",
+      x: 692.3,
+      y: 584.6,
+      parent_type: "location",
+      parent_id: "32",
+      display: "no"
+    },
+    "96": {
+      name: "Japeri",
+      x: 656.9,
+      y: 616,
+      parent_type: "location",
+      parent_id: "33",
+      display: "no"
+    },
+    "97": {
+      name: "Laje do Muriaé",
+      x: 687.8,
+      y: 584.9,
+      parent_type: "location",
+      parent_id: "34",
+      display: "no"
+    },
+    "98": {
+      name: "Macaé",
+      x: 694.6,
+      y: 610.1,
+      parent_type: "location",
+      parent_id: "35",
+      display: "no"
+    },
+    "99": {
+      name: "Macuco",
+      x: 685.2,
+      y: 601.7,
+      parent_type: "location",
+      parent_id: "36",
+      display: "no"
+    },
+    "100": {
+      name: "Magé",
+      x: 669.4,
+      y: 616.4,
+      parent_type: "location",
+      parent_id: "37",
+      display: "no"
+    },
+    "101": {
+      name: "Mangaratiba",
+      x: 649.2,
+      y: 623,
+      parent_type: "location",
+      parent_id: "38",
+      display: "no"
+    },
+    "102": {
+      name: "Maricá",
+      x: 673.8,
+      y: 622.1,
+      parent_type: "location",
+      parent_id: "39",
+      display: "no"
+    },
+    "103": {
+      name: "Mendes",
+      x: 655.4,
+      y: 613.5,
+      parent_type: "location",
+      parent_id: "40",
+      display: "no"
+    },
+    "104": {
+      name: "Miguel Pereira",
+      x: 660.7,
+      y: 612,
+      parent_type: "location",
+      parent_id: "41",
+      display: "no"
+    },
+    "105": {
+      name: "Miracema",
+      x: 686.3,
+      y: 589.3,
+      parent_type: "location",
+      parent_id: "42",
+      display: "no"
+    },
+    "106": {
+      name: "Natividade",
+      x: 690.7,
+      y: 581.3,
+      parent_type: "location",
+      parent_id: "43",
+      display: "no"
+    },
+    "107": {
+      name: "Nilópolis",
+      x: 661.8,
+      y: "620.2",
+      parent_type: "location",
+      parent_id: "44",
+      display: "no"
+    },
+    "108": {
+      name: "Niterói",
+      x: "668.8",
+      y: 621.4,
+      parent_type: "location",
+      parent_id: "45",
+      display: "no"
+    },
+    "109": {
+      name: "Nova Friburgo",
+      x: 679.5,
+      y: 608.2,
+      parent_type: "location",
+      parent_id: "46",
+      display: "no"
+    },
+    "110": {
+      name: "Nova Iguaçu",
+      x: "660.1",
+      y: 618.6,
+      parent_type: "location",
+      parent_id: "47",
+      display: "no"
+    },
+    "111": {
+      name: "Paracambi",
+      x: 655.8,
+      y: 615.3,
+      parent_type: "location",
+      parent_id: "48",
+      display: "no"
+    },
+    "112": {
+      name: "Paraíba do Sul",
+      x: 664.3,
+      y: 605.6,
+      parent_type: "location",
+      parent_id: "49",
+      display: "no"
+    },
+    "113": {
+      name: "Paraty",
+      x: 635.6,
+      y: 628.7,
+      parent_type: "location",
+      parent_id: "50",
+      display: "no"
+    },
+    "114": {
+      name: "Paty do Alferes",
+      x: 661.7,
+      y: 611.2,
+      parent_type: "location",
+      parent_id: "51",
+      display: "no"
+    },
+    "115": {
+      name: "Petrópolis",
+      x: 666.5,
+      y: 613,
+      parent_type: "location",
+      parent_id: "52",
+      display: "no"
+    },
+    "116": {
+      name: "Pinheiral",
+      x: 650,
+      y: "613.8",
+      parent_type: "location",
+      parent_id: "53",
+      display: "no"
+    },
+    "117": {
+      name: "Piraí",
+      x: 651.8,
+      y: 615.8,
+      parent_type: "location",
+      parent_id: "54",
+      display: "no"
+    },
+    "118": {
+      name: "Porciúncula",
+      x: 689.6,
+      y: 579.6,
+      parent_type: "location",
+      parent_id: "55",
+      display: "no"
+    },
+    "119": {
+      name: "Porto Real",
+      x: 644,
+      y: "611",
+      parent_type: "location",
+      parent_id: "56",
+      display: "no"
+    },
+    "120": {
+      name: "Quatis",
+      x: "645.8",
+      y: "610.4",
+      parent_type: "location",
+      parent_id: "57",
+      display: "no"
+    },
+    "121": {
+      name: "Queimados",
+      x: 658.9,
+      y: 617.6,
+      parent_type: "location",
+      parent_id: "58",
+      display: "no"
+    },
+    "122": {
+      name: "Quissamã",
+      x: 700.9,
+      y: 604.4,
+      parent_type: "location",
+      parent_id: "59",
+      display: "no"
+    },
+    "123": {
+      name: "Resende",
+      x: 641,
+      y: 612.3,
+      parent_type: "location",
+      parent_id: "60",
+      display: "no"
+    },
+    "124": {
+      name: "Rio Bonito",
+      x: 678.3,
+      y: 617.4,
+      parent_type: "location",
+      parent_id: "61",
+      display: "no"
+    },
+    "125": {
+      name: "Rio Claro",
+      x: 578.3,
+      y: 611,
+      parent_type: "location",
+      parent_id: "62",
+      display: "no"
+    },
+    "126": {
+      name: "Rio das Flores",
+      x: 658.4,
+      y: 605.7,
+      parent_type: "location",
+      parent_id: "63",
+      display: "no"
+    },
+    "127": {
+      name: "Rio das Ostras",
+      x: 691.5,
+      y: 613.5,
+      parent_type: "location",
+      parent_id: "64",
+      display: "no"
+    },
+    "128": {
+      name: "Rio de Janeiro",
+      x: "664.6",
+      y: 621.9,
+      parent_type: "location",
+      parent_id: "65",
+      display: "no"
+    },
+    "129": {
+      name: "Santa Maria Madalena",
+      x: 690.1,
+      y: "601.8",
+      parent_type: "location",
+      parent_id: "66",
+      display: "no"
+    },
+    "130": {
+      name: "Santo Antônio de Pádua",
+      x: 686.6,
+      y: 592.1,
+      parent_type: "location",
+      parent_id: "67",
+      display: "no"
+    },
+    "131": {
+      name: "São Fidélis",
+      x: 695.4,
+      y: 594.4,
+      parent_type: "location",
+      parent_id: "68",
+      display: "no"
+    },
+    "132": {
+      name: "São Francisco de Itabapoana",
+      x: 708.1,
+      y: 590.6,
+      parent_type: "location",
+      parent_id: "69",
+      display: "no"
+    },
+    "133": {
+      name: "São Gonçalo",
+      x: 669.3,
+      y: 620,
+      parent_type: "location",
+      parent_id: "70",
+      display: "no"
+    },
+    "134": {
+      name: "São João da Barra",
+      x: 709.5,
+      y: 594.2,
+      parent_type: "location",
+      parent_id: "71",
+      display: "no"
+    },
+    "135": {
+      name: "São João de Meriti",
+      x: 662.8,
+      y: 619.5,
+      parent_type: "location",
+      parent_id: "72",
+      display: "no"
+    },
+    "136": {
+      name: "São José de Ubá",
+      x: 691.5,
+      y: 588.2,
+      parent_type: "location",
+      parent_id: "73",
+      display: "no"
+    },
+    "137": {
+      name: "São José do Vale do Rio Preto",
+      x: 671.7,
+      y: 605.4,
+      parent_type: "location",
+      parent_id: "74",
+      display: "no"
+    },
+    "138": {
+      name: "São Pedro da Aldeia",
+      x: 688.2,
+      y: "619.5",
+      parent_type: "location",
+      parent_id: "75",
+      display: "no"
+    },
+    "139": {
+      name: "São Sebastião do Alto",
+      x: 687.6,
+      y: "600.2",
+      parent_type: "location",
+      parent_id: "76",
+      display: "no"
+    },
+    "140": {
+      name: "Sapucaia",
+      x: 671.5,
+      y: 602.2,
+      parent_type: "location",
+      parent_id: "77",
+      display: "no"
+    },
+    "141": {
+      name: "Saquarema",
+      x: 680.3,
+      y: "621.8",
+      parent_type: "location",
+      parent_id: "78",
+      display: "no"
+    },
+    "142": {
+      name: "Seropédica",
+      x: 656,
+      y: "618.2",
+      parent_type: "location",
+      parent_id: "79",
+      display: "no"
+    },
+    "143": {
+      name: "Silva Jardim",
+      x: 682.4,
+      y: 616.2,
+      parent_type: "location",
+      parent_id: "80",
+      display: "no"
+    },
+    "144": {
+      name: "Sumidouro",
+      x: 676.7,
+      y: 603,
+      parent_type: "location",
+      parent_id: "81",
+      display: "no"
+    },
+    "145": {
+      name: "Tanguá",
+      x: 676,
+      y: 617.9,
+      parent_type: "location",
+      parent_id: "82",
+      display: "no"
+    },
+    "146": {
+      name: "Teresópolis",
+      x: 670.8,
+      y: 611,
+      parent_type: "location",
+      parent_id: "83",
+      display: "no"
+    },
+    "147": {
+      name: "Trajano de Moraes",
+      x: 689.1,
+      y: 603.4,
+      parent_type: "location",
+      parent_id: "84",
+      display: "no"
+    },
+    "148": {
+      name: "Três Rios",
+      x: 665.9,
+      y: 604.6,
+      parent_type: "location",
+      parent_id: "85",
+      display: "no"
+    },
+    "149": {
+      name: "Valença",
+      x: 749.3,
+      y: 419.4,
+      parent_type: "location",
+      parent_id: "86",
+      display: "no"
+    },
+    "150": {
+      name: "Varre-Sai",
+      x: 692.9,
+      y: 578.9,
+      parent_type: "location",
+      parent_id: "87",
+      display: "no"
+    },
+    "151": {
+      name: "Vassouras",
+      x: 656.8,
+      y: 610.9,
+      parent_type: "location",
+      parent_id: "88",
+      display: "no"
+    },
+    "152": {
+      name: "Volta Redonda",
+      x: 648.1,
+      y: 613,
+      parent_type: "location",
+      parent_id: "89",
+      display: "no"
+    }
+  },
+  legend: {
+    entries: []
+  },
+  regions: {}
+};
