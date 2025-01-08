@@ -1,83 +1,623 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0">
-    <title>Planeta Terra - Em Movimento</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #000;
-        }
-        canvas { 
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/controls/OrbitControls.min.js"></script>
-    <script>
-        // Configurações iniciais da cena
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>
+		@media (max-width: 768px) { /* Para telas menores ou iguais a 768px */
+			.elementor-121 .elementor-element.elementor-element-91fb7c5 .elementor-widget-container {
+				text-align: center !important;
+				/* Adicione outros estilos específicos para celular aqui, se necessário */
+			}
+		}
+		</style>
+		 <link rel="icon" type="image/png" sizes="32x32" href="produtos/icone do site.png">
+	<!-- This site is optimized with the Yoast SEO plugin v23.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Contato - Casa D'Vina • Pão de Queijo e Salgados Congelados é Casa D'Vina. Nosso ❤️ bate por você!</title>
+	<meta name="description" content="A indústria de alimentos que mais cresce . Do amado pão de queijo aos salgadinhos que ninguém resiste. Sempre pertinho de casa, nos melhores supermercados, mercearias e padarias pra você." />
+	<link rel="canonical" href="https://divinissimo.com.br/contato/" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content=Contato - Casa D'Vina • Pão de Queijo e Salgados Congelados é Casa D'Vina. Da nossa casa para sua mesa" />
+	<meta property="og:description" content="A indústria de alimentos que mais cresce . Do amado pão de queijo aos salgadinhos que ninguém resiste. Sempre pertinho de casa, nos melhores supermercados, mercearias e padarias pra você." />
+	<meta property="og:url" content="https://divinissimo.com.br/contato/" />
+	<meta property="og:site_name" content="Contato - Casa D'Vina • Pão de Queijo e Salgados Congelados é Casa D'Vina.  Da nossa casa para sua mesa" />
+	<meta property="article:publisher" content="https://www.facebook.com/divinissimoalimentos" />
+	<meta property="article:modified_time" content="2024-01-08T12:55:19+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@Divinissimo_" />
+	<meta name="twitter:label1" content="Est. tempo de leitura" />
+	<meta name="twitter:data1" content="1 minuto" />
+	<script data-jetpack-boost="ignore" type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://divinissimo.com.br/contato/","url":"https://divinissimo.com.br/contato/","name":"Contato - Diviníssimo • Pão de Queijo e Salgados Congelados em Minas é Diviníssimo. Nosso ❤️ bate por você!","isPartOf":{"@id":"https://divinissimo.com.br/#website"},"datePublished":"2024-01-05T13:45:54+00:00","dateModified":"2024-01-08T12:55:19+00:00","description":"A indústria de alimentos que mais cresce em Minas Gerais. Do amado pão de queijo aos salgadinhos que ninguém resiste. Sempre pertinho de casa, nos melhores supermercados, mercearias e padarias pra você.","breadcrumb":{"@id":"https://divinissimo.com.br/contato/#breadcrumb"},"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://divinissimo.com.br/contato/"]}]},{"@type":"BreadcrumbList","@id":"https://divinissimo.com.br/contato/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://divinissimo.com.br/"},{"@type":"ListItem","position":2,"name":"Contato"}]},{"@type":"WebSite","@id":"https://divinissimo.com.br/#website","url":"https://divinissimo.com.br/","name":"Diviníssimo • Pão de Queijo e Salgados Congelados em Minas é Diviníssimo. Nosso ❤️ bate por você!","description":"Diviníssimo é a indústria de alimentos que mais cresce em Minas Gerais. Do amado pão de queijo aos salgadinhos que ninguém resiste. Sempre pertinho de casa, nos melhores supermercados, mercearias e padarias pra você.","publisher":{"@id":"https://divinissimo.com.br/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://divinissimo.com.br/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"pt-BR"},{"@type":"Organization","@id":"https://divinissimo.com.br/#organization","name":"Diviníssimo • Pão de Queijo e Salgados Congelados em Minas é Diviníssimo. Nosso ❤️ bate por você!","url":"https://divinissimo.com.br/","logo":{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://divinissimo.com.br/#/schema/logo/image/","url":"https://i0.wp.com/divinissimo.com.br/wp-content/uploads/2022/12/favicon.png?fit=70%2C70&ssl=1","contentUrl":"https://i0.wp.com/divinissimo.com.br/wp-content/uploads/2022/12/favicon.png?fit=70%2C70&ssl=1","width":70,"height":70,"caption":"Diviníssimo • Pão de Queijo e Salgados Congelados em Minas é Diviníssimo. Nosso ❤️ bate por você!"},"image":{"@id":"https://divinissimo.com.br/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/divinissimoalimentos","https://x.com/Divinissimo_","https://www.instagram.com/divinissimoalimentos/"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
 
-        // Criando a esfera que representa o planeta Terra
-        const geometry = new THREE.SphereGeometry(5, 64, 64);
 
-        // Corrigindo os links para imagens externas
-        const texture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/filipakb/earth-textures/main/earth_daymap.jpg'); // Textura da Terra
-        const normalMap = new THREE.TextureLoader().load('https://raw.githubusercontent.com/filipakb/earth-textures/main/earth_normal.jpg'); // Mapa normal para relevo
+	<link rel='dns-prefetch' href='//secure.gravatar.com' />
+	<link rel='dns-prefetch' href='//stats.wp.com' />
+	<link rel='dns-prefetch' href='//widgets.wp.com' />
+	<link rel='dns-prefetch' href='//s0.wp.com' />
+	<link rel='dns-prefetch' href='//0.gravatar.com' />
+	<link rel='dns-prefetch' href='//1.gravatar.com' />
+	<link rel='dns-prefetch' href='//2.gravatar.com' />
+	<link rel='preconnect' href='//i0.wp.com' />
+	<link rel='preconnect' href='//c0.wp.com' />
+	<link rel='stylesheet' id='all-css-f9e28469ec8df3673917829df01bf5aa' href='https://divinissimo.com.br/_jb_static/??59c36d174d' type='text/css' media='all' />
+	<style id='jetpack-sharing-buttons-style-inline-css'>
+	.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}.editor-styles-wrapper .wp-block-jetpack-sharing-buttons{gap:0;padding-inline-start:0}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+	</style>
+	<style id='classic-theme-styles-inline-css'>
+	/*! This file is auto-generated */
+	.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+	</style>
+	<style id='global-styles-inline-css'>
+	:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--albert-sans: 'Albert Sans', sans-serif;--wp--preset--font-family--alegreya: Alegreya, serif;--wp--preset--font-family--arvo: Arvo, serif;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;--wp--preset--font-family--bricolage-grotesque: 'Bricolage Grotesque', sans-serif;--wp--preset--font-family--cabin: Cabin, sans-serif;--wp--preset--font-family--chivo: Chivo, sans-serif;--wp--preset--font-family--commissioner: Commissioner, sans-serif;--wp--preset--font-family--cormorant: Cormorant, serif;--wp--preset--font-family--courier-prime: 'Courier Prime', monospace;--wp--preset--font-family--crimson-pro: 'Crimson Pro', serif;--wp--preset--font-family--dm-mono: 'DM Mono', monospace;--wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;--wp--preset--font-family--dm-serif-display: 'DM Serif Display', serif;--wp--preset--font-family--domine: Domine, serif;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--epilogue: Epilogue, sans-serif;--wp--preset--font-family--fahkwang: Fahkwang, sans-serif;--wp--preset--font-family--figtree: Figtree, sans-serif;--wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;--wp--preset--font-family--fjalla-one: 'Fjalla One', sans-serif;--wp--preset--font-family--fraunces: Fraunces, serif;--wp--preset--font-family--gabarito: Gabarito, system-ui;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--ibarra-real-nova: 'Ibarra Real Nova', serif;--wp--preset--font-family--instrument-serif: 'Instrument Serif', serif;--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;--wp--preset--font-family--jost: Jost, sans-serif;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;--wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;--wp--preset--font-family--literata: Literata, serif;--wp--preset--font-family--lora: Lora, serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--font-family--newsreader: Newsreader, serif;--wp--preset--font-family--noto-sans-mono: 'Noto Sans Mono', sans-serif;--wp--preset--font-family--nunito: Nunito, sans-serif;--wp--preset--font-family--open-sans: 'Open Sans', sans-serif;--wp--preset--font-family--overpass: Overpass, sans-serif;--wp--preset--font-family--pt-serif: 'PT Serif', serif;--wp--preset--font-family--petrona: Petrona, serif;--wp--preset--font-family--piazzolla: Piazzolla, serif;--wp--preset--font-family--playfair-display: 'Playfair Display', serif;--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;--wp--preset--font-family--poppins: Poppins, sans-serif;--wp--preset--font-family--raleway: Raleway, sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: 'Roboto Slab', serif;--wp--preset--font-family--rubik: Rubik, sans-serif;--wp--preset--font-family--rufina: Rufina, serif;--wp--preset--font-family--sora: Sora, sans-serif;--wp--preset--font-family--source-sans-3: 'Source Sans 3', sans-serif;--wp--preset--font-family--source-serif-4: 'Source Serif 4', serif;--wp--preset--font-family--space-mono: 'Space Mono', monospace;--wp--preset--font-family--syne: Syne, sans-serif;--wp--preset--font-family--texturina: Texturina, serif;--wp--preset--font-family--urbanist: Urbanist, sans-serif;--wp--preset--font-family--work-sans: 'Work Sans', sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-albert-sans-font-family{font-family: var(--wp--preset--font-family--albert-sans) !important;}.has-alegreya-font-family{font-family: var(--wp--preset--font-family--alegreya) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-bricolage-grotesque-font-family{font-family: var(--wp--preset--font-family--bricolage-grotesque) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-commissioner-font-family{font-family: var(--wp--preset--font-family--commissioner) !important;}.has-cormorant-font-family{font-family: var(--wp--preset--font-family--cormorant) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-crimson-pro-font-family{font-family: var(--wp--preset--font-family--crimson-pro) !important;}.has-dm-mono-font-family{font-family: var(--wp--preset--font-family--dm-mono) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-dm-serif-display-font-family{font-family: var(--wp--preset--font-family--dm-serif-display) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-epilogue-font-family{font-family: var(--wp--preset--font-family--epilogue) !important;}.has-fahkwang-font-family{font-family: var(--wp--preset--font-family--fahkwang) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-fjalla-one-font-family{font-family: var(--wp--preset--font-family--fjalla-one) !important;}.has-fraunces-font-family{font-family: var(--wp--preset--font-family--fraunces) !important;}.has-gabarito-font-family{font-family: var(--wp--preset--font-family--gabarito) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-ibarra-real-nova-font-family{font-family: var(--wp--preset--font-family--ibarra-real-nova) !important;}.has-instrument-serif-font-family{font-family: var(--wp--preset--font-family--instrument-serif) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-literata-font-family{font-family: var(--wp--preset--font-family--literata) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-newsreader-font-family{font-family: var(--wp--preset--font-family--newsreader) !important;}.has-noto-sans-mono-font-family{font-family: var(--wp--preset--font-family--noto-sans-mono) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-pt-serif-font-family{font-family: var(--wp--preset--font-family--pt-serif) !important;}.has-petrona-font-family{font-family: var(--wp--preset--font-family--petrona) !important;}.has-piazzolla-font-family{font-family: var(--wp--preset--font-family--piazzolla) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-plus-jakarta-sans-font-family{font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-rufina-font-family{font-family: var(--wp--preset--font-family--rufina) !important;}.has-sora-font-family{font-family: var(--wp--preset--font-family--sora) !important;}.has-source-sans-3-font-family{font-family: var(--wp--preset--font-family--source-sans-3) !important;}.has-source-serif-4-font-family{font-family: var(--wp--preset--font-family--source-serif-4) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-syne-font-family{font-family: var(--wp--preset--font-family--syne) !important;}.has-texturina-font-family{font-family: var(--wp--preset--font-family--texturina) !important;}.has-urbanist-font-family{font-family: var(--wp--preset--font-family--urbanist) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}
+	:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+	:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+	:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+	</style>
+	<style id='jetpack-global-styles-frontend-style-inline-css'>
+	:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+	</style>
+	
 
-        const material = new THREE.MeshStandardMaterial({
-            map: texture,
-            normalMap: normalMap,
-            emissive: new THREE.Color(0xaaaaaa),
-            emissiveIntensity: 0.1
-        });
+<script data-jetpack-boost="ignore" src="https://divinissimo.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 
-        const earth = new THREE.Mesh(geometry, material);
-        scene.add(earth);
+	<style>img#wpstats{display:none}</style>
+		<meta name="generator" content="Elementor 3.24.7; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<!-- Google Tag Manager -->
 
-        // Iluminação para a cena
-        const ambientLight = new THREE.AmbientLight(0x404040, 2); // Luz ambiente suave
-        scene.add(ambientLight);
+<!-- End Google Tag Manager -->
 
-        const directionalLight = new THREE.DirectionalLight(0xffffff, 1); // Luz direcional para iluminar o planeta
-        directionalLight.position.set(10, 10, 10).normalize();
-        scene.add(directionalLight);
 
-        // Adicionando controles para interagir com a cena (Zoom e Rotação)
-        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="imagem/Icone.png" sizes="32x32" />
+<link rel="icon" href="imagem/Icone.png" />
+<meta name="msapplication-TileImage" href="imagem/logo 1.webp" />
+<style type="text/css" id="wp-custom-css">.button {
+	cursor:pointer;
+	text-decoration:none !important;
+}
+.button:hover {
+	text-decoration:none;
+	transform:scale(1.1);
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 
-        // Posição inicial da câmera
-        camera.position.z = 15;
+body {overflow-x: hidden;}
 
-        // Função de animação
-        function animate() {
-            requestAnimationFrame(animate);
+div, p, span, strong, a {
+	text-decoration:none !important;
+}
 
-            // Rotacionando a Terra
-            earth.rotation.y += 0.002; // A rotação lenta da Terra
+.aceitar_cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
-            // Atualizando a renderização
-            renderer.render(scene, camera);
-        }
+.aceitar_cookies_container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        // Função para ajustar o tamanho do canvas quando a janela for redimensionada
-        window.addEventListener('resize', () => {
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-        });
+.aceitar_cookies p {
+    margin: 0;
+    font-size: 14px;
+}
 
-        // Iniciando a animação
-        animate();
-    </script>
-</body>
+.aceitar_cookies a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.aceitar_cookies_bt {
+    background-color: #008cba;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.elementor-10669 .elementor-element.elementor-element-ade0e4b:not(.elementor-motion-effects-element-type-background), .elementor-10669 .elementor-element.elementor-element-ade0e4b>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+    /* background-color: var(--e-global-color-secondary); */
+    background-color: #0b203f
+	!important;
+}
+@media (max-width: 1209px) {
+    .elementor-10669 .elementor-element.elementor-element-65e00ad.e-con {
+        display: flex; /* Define um contexto flexível para o alinhamento */
+        align-items: center; /* Alinha os itens verticalmente ao centro */
+        justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    }
+}
+
+.elementor-10669 .elementor-element.elementor-element-01563ca .elementor-button {
+    font-family: "Congenial", Sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+    background-color: #0b203f
+	!important;;
+    border-radius: 8px;
+}.elementor-10669 .elementor-element.elementor-element-8f208b5 .elementor-button {
+    font-family: "Congenial", Sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+	background-color: #0b203f
+	!important;;
+    border-radius: 8px;
+}
+.aceitar_cookies_bt:hover {
+    background-color: #0077a1;
+	@media (max-width: 768px) { /* Ajuste a largura conforme necessário */
+    .break-line {
+        display: block; /* Faz o <br> aparecer */
+    }
+}
+
+.break-line {
+        display: none; /* Faz o <br> não aparecer */
+ 
+}
+
+}</style></head>
+<body class="page-template-default page page-id-10669 wp-custom-logo elementor-default elementor-kit-7 elementor-page elementor-page-10669">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GGTWRGT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a class="skip-link screen-reader-text" href="#content">Ir para o conteúdo</a>
+
+<div data-elementor-type="header" data-elementor-id="88" class="elementor elementor-88 elementor-location-header" data-elementor-post-type="elementor_library">
+	<div class="elementor-element elementor-element-0205319 e-flex e-con-boxed e-con e-parent" data-id="0205319" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;position&quot;:&quot;fixed&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
+			<div class="e-con-inner">
+<div class="elementor-element elementor-element-cd52c25 e-con-full e-flex e-con e-child" data-id="cd52c25" data-element_type="container">
+		<div class="elementor-element elementor-element-19b840c elementor-widget-tablet__width-initial elementor-widget__width-initial elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="19b840c" data-element_type="widget" data-widget_type="theme-site-logo.default">
+		<div class="elementor-widget-container">
+			<a href="index.html">
+				<img width="255" height="115" src="imagem/logo 1.webp" class="attachment-full size-full wp-image-9214" alt="" data-attachment-id="9214" data-permalink="https://divinissimo.com.br/?attachment_id=9214" data-orig-file="https://i0.wp.com/divinissimo.com.br/wp-content/uploads/2022/12/WhiteLogo.webp?fit=255%2C115&amp;ssl=1" data-orig-size="255,115" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="WhiteLogo" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/divinissimo.com.br/wp-content/uploads/2022/12/WhiteLogo.webp?fit=255%2C115&amp;ssl=1" data-large-file="https://i0.wp.com/divinissimo.com.br/wp-content/uploads/2022/12/WhiteLogo.webp?fit=255%2C115&amp;ssl=1" role="button" />				</a>
+										</div>
+		</div>
+		</div>
+<div class="elementor-element elementor-element-6235c8a e-con-full e-flex e-con e-child" data-id="6235c8a" data-element_type="container">
+		<div class="elementor-element elementor-element-a4be6e7 elementor-nav-menu__align-end elementor-nav-menu--stretch elementor-nav-menu__text-align-center elementor-widget-tablet__width-inherit elementor-nav-menu--dropdown-tablet elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="a4be6e7" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+		<div class="elementor-widget-container">
+				<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+		<ul id="menu-1-a4be6e7" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-95 current_page_item menu-item-112"><a href="empresa.html" aria-current="page" class="elementor-item elementor-item-active"><img src="https://divinissimo.com.br/wp-content/uploads/2023/05/icones-01.svg" class="_mi _before _svg" aria-hidden="true" alt=""00 style="width:1.25em;"/><span>Empresa</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1944"><a class="elementor-item"><img src="https://divinissimo.com.br/wp-content/uploads/2023/05/icones-02.svg" class="_mi _before _svg" aria-hidden="true" alt=""00 style="width:1.1em;"/><span>Produtos</span></a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5098"><a href="pao.html" class="elementor-sub-item">Pães de Queijo</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5097"><a href="salgado.html" class="elementor-sub-item">Salgados Bufê</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5096"><a href="service.html" class="elementor-sub-item">Food Service</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10994"><a href="contato.html" class="elementor-item"><img src="https://divinissimo.com.br/wp-content/uploads/2023/05/icones-05.svg" class="_mi _before _svg" aria-hidden="true" alt=""00 style="width:1.25em;"/><span>Contato</span></a></li>
+</ul>			</nav>
+			<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Alternar menu" aria-expanded="false">
+	<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>			<span class="elementor-screen-only">Menu</span>
+</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+		<ul id="menu-2-a4be6e7" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-95 current_page_item menu-item-112"><a href="empresa.html" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1"><img src="https://divinissimo.com.br/wp-content/uploads/2023/05/icones-01.svg" class="_mi _before _svg" aria-hidden="true" alt=""00 style="width:1.25em;"/><span>Empresa</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1944"><a class="elementor-item" tabindex="-1"><img src="https://divinissimo.com.br/wp-content/uploads/2023/05/icones-02.svg" class="_mi _before _svg" aria-hidden="true" alt=""00 style="width:1.1em;"/><span>Produtos</span></a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5098"><a href="pao.html" class="elementor-sub-item">Pães de Queijo</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5097"><a href="salgado.html" class="elementor-sub-item">Salgados Bufê</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4837 current_page_item menu-item-5096"><a href="service.html" aria-current="page" class="elementor-sub-item elementor-item-active">Food Service</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10994"><a href="contato.html" class="elementor-item" tabindex="-1"><img src="https://divinissimo.com.br/wp-content/uploads/2023/05/icones-05.svg" class="_mi _before _svg" aria-hidden="true" alt=""00 style="width:1.25em;"/><span>Contato</span></a></li>
+</ul>			</nav>
+		</div>
+		</div>
+		</div>
+		<div class="elementor-element elementor-element-aa3f4d9 e-con-full elementor-hidden-mobile e-flex e-con e-child" data-id="aa3f4d9" data-element_type="container">
+				<div class="elementor-element elementor-element-17adf00 elementor-shape-circle elementor-grid-4 elementor-widget__width-auto elementor-grid-tablet-4 elementor-grid-mobile-4 e-grid-align-mobile-center elementor-widget-mobile__width-initial elementor-widget-tablet__width-initial e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="17adf00" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+			
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+			
+<main id="content" class="site-main post-10669 page type-page status-publish hentry">
+
+	
+	<div class="page-content">
+				<div data-elementor-type="wp-page" data-elementor-id="10669" class="elementor elementor-10669" data-elementor-post-type="page">
+				<br><br><br>
+					<img src="Banner site frete grátis minimalista branco e cinza.png" alt="">
+					<div style="display: none;" class="elementor-element elementor-element-b7471f7 e-flex e-con-boxed elementor-invisible e-con e-parent" data-id="b7471f7" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-098caf4 elementor-widget elementor-widget-spacer" data-id="098caf4" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-19581af e-flex e-con-boxed e-con e-parent" data-id="19581af" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-53ca8f4 e-con-full e-flex elementor-invisible e-con e-child" data-id="53ca8f4" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+				<div class="elementor-element elementor-element-c3d74e4 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="c3d74e4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Aqui é o nosso canal de conversa direta com você!</p>						</div>
+				</div>
+				<div style="display: none;" class="elementor-element elementor-element-514d880 elementor-view-default elementor-widget elementor-widget-icon" data-id="514d880" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<divstyle="display: none;" class="elementor-icon elementor-animation-wobble-skew">
+			<svg aria-hidden="true" class="e-font-icon-svg e-far-heart" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>			</divstyle=>
+		</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a7b2069 e-con-full e-flex elementor-invisible e-con e-child" data-id="a7b2069" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+		<div class="elementor-element elementor-element-65e00ad e-con-full e-flex elementor-invisible e-con e-child" data-id="65e00ad" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;,&quot;animation_mobile&quot;:&quot;fadeIn&quot;}">
+				<div class="elementor-element elementor-element-692beaf elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-id="692beaf" data-element_type="widget" data-widget_type="text-editor.default">
+		<style>@media (min-width: 769px) { /* Para telas de desktop */
+			.break-line {
+				display: none; /* O <br> não aparecerá */
+			}
+		}
+		
+		@media (max-width: 768px) { /* Para telas de dispositivos móveis */
+			.break-line {
+				display: block; /* O <br> aparecerá */
+			}
+		}
+		</style>
+<br class="break-line">
+<br class="break-line">
+<br class="break-line">
+
+
+					<div class="elementor-widget-container">
+							<p>E o mais importante: com muito sabor!</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-543c067 elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-id="543c067" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Fale conosco em <strong>nossas redes sociais!</strong></p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6e05133 e-con-full e-flex e-con e-child" data-id="6e05133" data-element_type="container" data-settings="{&quot;animation_mobile&quot;:&quot;fadeIn&quot;}">
+				<div class="elementor-element elementor-element-d427bd2 elementor-shape-circle elementor-grid-6 e-grid-align-left elementor-widget elementor-widget-social-icons" data-id="d427bd2" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+						<span class="elementor-screen-only">Instagram</span>
+						<svg class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>					</a>
+				</span>
+					
+			
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-021f68d e-con-full CONTATO_red00 e-flex elementor-invisible e-con e-child" data-id="021f68d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;,&quot;animation_mobile&quot;:&quot;fadeIn&quot;}">
+		<div class="elementor-element elementor-element-8904bbf e-con-full e-flex e-con e-child" data-id="8904bbf" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-298b8ac elementor-widget elementor-widget-spacer" data-id="298b8ac" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-13bbf6b e-flex e-con-boxed e-con e-parent" data-id="13bbf6b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-09ed363 dc-has-condition dc-condition-empty e-flex e-con-boxed elementor-invisible e-con e-child" data-id="09ed363" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;,&quot;animation_mobile&quot;:&quot;fadeIn&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-f6fd0e5 elementor-widget elementor-widget-text-editor" data-id="f6fd0e5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p style="color: #9a1a25;">Redes Sociais:</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-fc4891e elementor-align-left elementor-widget elementor-widget-button" data-id="fc4891e" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+		
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-01563ca elementor-align-left elementor-widget elementor-widget-button" data-id="01563ca" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-md" href="http://wa.me/5531996214618">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text" style="color: #FFA400">Whatsapp <strong style="color: white;">(31) 996214618</strong></span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8f208b5 elementor-align-left elementor-widget elementor-widget-button" data-id="8f208b5" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-md" href="https://www.instagram.com/direct/t/17844945560876921">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text" style="color: #FFA400;" >Instagram: <strong style="color: white;">Casa D.Vina</strong></span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-14ade7e e-con-full PSE_yellowFloat04 elementor-hidden-mobile e-flex elementor-invisible e-con e-child" data-id="14ade7e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}">
+		<div class="elementor-element elementor-element-ade0e4b e-con-full e-flex e-con e-child" data-id="ade0e4b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-a91ac7e elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-id="a91ac7e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Sua sugestão, elogio</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-dfcd926 elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-id="dfcd926" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>crítica ou dúvida são</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-459ab5d elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-id="459ab5d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>muito importantes</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-abbb7f9 elementor-widget elementor-widget-text-editor" data-id="abbb7f9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>para a Casa D'Vina.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-301c1f6 elementor-widget__width-auto elementor-view-default elementor-widget elementor-widget-icon" data-id="301c1f6" data-element_type="widget" style="display: none;" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div style="display: none;" class="elementor-icon elementor-animation-wobble-skew">
+			<svg aria-hidden="true" class="e-font-icon-svg e-far-heart" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>			</div>
+		</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				<div class="post-tags">
+					</div>
+			</div>
+
+			<script>// Seleciona todas as imagens com a classe específica e src desejado
+				const imagesToReplace = document.querySelectorAll('img._mi._before._svg[src="https://divinissimo.com.br/wp-content/uploads/2023/05/icones-01.svg"]');
+				
+				// URL da nova imagem
+				const newImageUrl = 'produtos/icone do site.png'; // Substitua por sua nova imagem
+				
+				// Percorre cada imagem e altera seu src e tamanho
+				imagesToReplace.forEach(image => {
+					image.src = newImageUrl;        // Substitui o src da imagem
+					image.style.width = '30px';     // Define a largura para 50 pixels
+					image.style.height = '30px';    // Define a altura para 50 pixels
+				});
+				</script>
+</main><div data-elementor-type="footer" data-elementor-id="121" class="elementor elementor-121 elementor-location-footer" data-elementor-post-type="elementor_library">
+	<div class="elementor-element elementor-element-51f8cbf e-flex e-con-boxed e-con e-parent" data-id="51f8cbf" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="e-con-inner">
+<div class="elementor-element elementor-element-fe25b45 e-con-full e-flex e-con e-child" data-id="fe25b45" data-element_type="container">
+		<div class="elementor-element elementor-element-a5c0292 elementor-widget__width-initial elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="a5c0292" data-element_type="widget" data-widget_type="theme-site-logo.default">
+		<div class="elementor-widget-container">
+							<a href="index.html">
+	<img width="255" height="115" src="imagem/logo 1.webp" class="attachment-full size-full wp-image-9214" alt="" data-attachment-id="9214" data-permalink="https://divinissimo.com.br/?attachment_id=9214" data-orig-file="https://i0.wp.com/divinissimo.com.br/wp-content/uploads/2022/12/WhiteLogo.webp?fit=255%2C115&amp;ssl=1" data-orig-size="255,115" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="WhiteLogo" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/divinissimo.com.br/wp-content/uploads/2022/12/WhiteLogo.webp?fit=255%2C115&amp;ssl=1" data-large-file="https://i0.wp.com/divinissimo.com.br/wp-content/uploads/2022/12/WhiteLogo.webp?fit=255%2C115&amp;ssl=1" role="button" />				</a>
+							</div>
+		</div>
+		</div>
+<div class="elementor-element elementor-element-c166841 e-con-full e-flex e-con e-child" data-id="c166841" data-element_type="container">
+		<div class="elementor-element elementor-element-8394801 elementor-widget__width-inherit elementor-widget elementor-widget-heading" data-id="8394801" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-widget-container"><br>
+	<h2 class="elementor-heading-title elementor-size-default">Fábrica</h2>		</div>
+		</div>
+		<div class="elementor-element elementor-element-ad7017a elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="ad7017a" data-element_type="widget" data-widget_type="icon-list.default">
+		<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+				<li class="elementor-icon-list-item">
+					<a href="">
+						<span class="elementor-icon-list-icon" style="font-size: 15px !important;">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>						</span>
+										<span class="elementor-icon-list-text"style= "color: white !important; font-weight: bold; ">Rua Jovelina Pinto Rezende, 77 - Nogueiras. Itaguara-MG</span>
+											</a>
+									</li>
+											<li class="elementor-icon-list-item" style="font-size: 15px !important;">
+															<span class="elementor-icon-list-icon">
+											<svg aria-hidden="true" class="e-font-icon-svg e-far-clock" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>						</span>
+														<span class="elementor-icon-list-text"style= "color: white !important; font-weight: bold;">7h às 17h | Segunda a Sexta</span>
+													</li>
+				
+				</ul>
+		</div>
+		</div>
+		<div class="elementor-element elementor-element-4981499 elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="4981499" data-element_type="widget" data-widget_type="icon-list.default">
+		<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+					<li class="elementor-icon-list-item">
+									<a href="tel:31996214618">
+<br>
+										<span class="elementor-icon-list-icon" style="font-size: 15px !important;">
+					<svg aria-hidden="true" class="e-font-icon-svg e-far-comment" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32zm0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29 7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160-93.3 160-208 160z"></path></svg>						</span>
+								<span class="elementor-icon-list-text" > (31) 996214618</span>
+									</a>
+							</li>
+				</ul>
+		</div>
+		</div>
+		</div>
+<div class="elementor-element elementor-element-cfcc965 e-con-full e-flex e-con e-child" data-id="cfcc965" data-element_type="container">
+		<div class="elementor-element elementor-element-ce12afd elementor-widget__width-inherit elementor-widget elementor-widget-heading" data-id="ce12afd" data-element_type="widget" data-widget_type="heading.default">
+		
+	
+		</div>
+<div class="elementor-element elementor-element-5ed33e6 e-con-full e-flex e-con e-child" data-id="5ed33e6" data-element_type="container">
+		<div class="elementor-element elementor-element-799df6c elementor-widget__width-inherit elementor-widget elementor-widget-heading" data-id="799df6c" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-widget-container">
+	<h2 class="elementor-heading-title elementor-size-default"><a href="contato.html">Contato</a></h2>		</div>
+		</div>
+		<div class="elementor-element elementor-element-ed6e171 elementor-widget__width-inherit elementor-widget elementor-widget-heading" data-id="ed6e171" data-element_type="widget" data-widget_type="heading.default">
+		
+		<div class="elementor-element elementor-element-940e7a8 elementor-widget elementor-widget-spacer" data-id="940e7a8" data-element_type="widget" data-widget_type="spacer.default">
+		<div class="elementor-widget-container">
+			<div class="elementor-spacer">
+	<div class="elementor-spacer-inner"></div>
+</div>
+		</div>
+		</div>
+		<div class="elementor-element elementor-element-62f62dc elementor-widget__width-inherit elementor-widget elementor-widget-heading" data-id="62f62dc" data-element_type="widget" data-widget_type="heading.default">
+		<div class="elementor-widget-container">
+	<h2 class="elementor-heading-title elementor-size-default">Acompanhe nas redes</h2>		</div><br>
+		</div>
+		<div class="elementor-element elementor-element-91fb7c5 elementor-shape-circle elementor-grid-6 e-grid-align-left elementor-widget elementor-widget-social-icons" data-id="91fb7c5" data-element_type="widget" data-widget_type="social-icons.default">
+		<div class="elementor-widget-container">
+			<div class="elementor-social-icons-wrapper elementor-grid">
+					<span class="elementor-grid-item" style="font-size: 15px !important;">
+			<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-grow elementor-repeater-item-4cbc3a1" href="https://www.instagram.com/casad.vina/" target="_blank">
+				<span class="elementor-screen-only">Instagram</span>
+						<svg class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>					</a>
+				</span> <span style="align-items: center; display: flex; color: white !important; font-weight: bold;">casad.vina</span>
+					<br>
+					
+					</div>
+					<p></p>
+					<span class="elementor-grid-item" style="font-size: 15px !important;" >
+						<a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-animation-grow elementor-repeater-item-deb2c9a" href="http://wa.me/5531996214618" target="_blank">
+							<span class="elementor-screen-only">Whatsapp</span>
+							<svg class="e-font-icon-svg e-fab-whatsapp" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>					</a>
+							<span style="align-items: center;  color: white !important;   font-weight: bold"  > (31) 9621-4618</span></span></span>
+						
+		</div>
+		</div>
+		</div>
+			</div>
+		</div>
+		</div>
+<style>.elementor-121 .elementor-element.elementor-element-51f8cbf:not(.elementor-motion-effects-element-type-background), .elementor-121 .elementor-element.elementor-element-51f8cbf>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+	background-color: #9a1a25;
+}
+.elementor-2402 .elementor-element.elementor-element-7621190:not(.elementor-motion-effects-element-type-background), .elementor-2402 .elementor-element.elementor-element-7621190>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+	background-color: #9a1a25;
+}
+.elementor-10669 .elementor-element.elementor-element-8904bbf:not(.elementor-motion-effects-element-type-background), .elementor-10669 .elementor-element.elementor-element-8904bbf>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+background-color: #9a1a25 !important;
+}.elementor-88 .elementor-element.elementor-element-0205319:not(.elementor-motion-effects-element-type-background), .elementor-88 .elementor-element.elementor-element-0205319>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+background-color: #9a1a25;
+}
+</style>
+<!--  -->
+<style>
+	@media (max-width: 768px) { /* Para telas menores ou iguais a 768px */
+		.elementor-121 .elementor-element.elementor-element-91fb7c5 .elementor-widget-container {
+			text-align: center !important;
+			padding: 10px; /* Exemplo: adiciona um pouco de espaçamento */
+
+			/* Adicione outros estilos específicos para celular aqui, se necessário */
+		}
+	}
+	</style>
+<!--  -->
+
+			
+
+<style>
+	.elementor-element.elementor-element-0205319 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Ajuste o valor conforme necessário */
+}
+</style>
+		
+
+
+
+
+
+
+
+<script id="jetpack-mu-wpcom-settings-js-before">
+var JETPACK_MU_WPCOM_SETTINGS = {"assetsUrl":"https:\/\/divinissimo.com.br\/wp-content\/mu-plugins\/wpcomsh\/vendor\/automattic\/jetpack-mu-wpcom\/src\/build\/"};
+</script><script type='text/javascript' src='https://divinissimo.com.br/wp-includes/js/jquery/jquery-migrate.min.js?m=1686289764'></><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GGTWRGT');</script><script>
+
+</script><script defer id="bilmur" data-customproperties="{&quot;woo_active&quot;:&quot;0&quot;}" data-provider="wordpress.com" data-service="atomic"  src="https://s0.wp.com/wp-content/js/bilmur.min.js?m=202443"></script><script type='text/javascript'>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script><script type='text/javascript' src='https://divinissimo.com.br/_jb_static/??-eJydj0sSgjAMhm/jytLB8cWC8QpeoZQiKX3ZtMNweysqOCNu2KX/l3xNeke4NUGYQJ2KNzBI68EwDTzFNQSwKbnGSgGncmJkhsSNMJO47X9djfWaaIYdklQSoYRO2HrKEEVAqqCi8h6FH7Jn10pLWmzKyIIntAkibYVSdnH6RRo/9teZBvNnk/kb5+33EaiZDwlF/NwzJ6t8AXg3TK7x9fZcdJmfdudDXhTH/YZXZf4AZ/Gsww=='></script><script src="https://stats.wp.com/e-202443.js" id="jetpack-stats-js" data-wp-strategy="defer"></script><script id="jetpack-stats-js-after">
+_stq = window._stq || [];
+_stq.push([ "view", JSON.parse("{\"v\":\"ext\",\"blog\":\"213376229\",\"post\":\"10669\",\"tz\":\"-3\",\"srv\":\"divinissimo.com.br\",\"hp\":\"atomic\",\"ac\":\"2\",\"amp\":\"0\",\"j\":\"1:14.0-a.7\"}") ]);
+_stq.push([ "clickTrackerInit", "213376229", "10669" ]);
+</script><script type='text/javascript' src='https://divinissimo.com.br/_jb_static/??-eJydjMsKwjAQRf/GlcmQgo8uit/SJtOaNpkJmYT8vloQBMGFy3s557SkLFNBKpBCXTwJYMD43JxVygyjCBaBVaDhlEa7vV6dKxUfUUdPepVj+1H5Lvxpz3mHnIrsakD50D3ZUB3umPNS4M68vYFbHMylu/b9yZy7g50G8wBxNFu/'></script><script src="https://divinissimo.com.br/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script><script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script><script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/divinissimo.com.br\/wp-admin\/admin-ajax.php","nonce":"916494b205","urls":{"assets":"https:\/\/divinissimo.com.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/divinissimo.com.br\/wp-json\/"},"settings":{"lazy_load_background_images":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/divinissimo.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script><script src="https://divinissimo.com.br/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.24.4" id="elementor-pro-frontend-js"></script><script type='text/javascript' src='https://divinissimo.com.br/wp-includes/js/jquery/ui/core.min.js?m=1719496303'></script><script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carrossel | Rolagem horizontal: Setas para esquerda e direita","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":770,"lg":1210,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":769,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":640,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1209,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1024,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1440,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela ampla (widescreen)","value":1679,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":true},"version":"3.24.7","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"container_grid":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_onboarding":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"home_screen":true,"ai-layout":true,"landing-pages":true,"link-in-bio":true,"floating-buttons":true,"display-conditions":true,"form-submissions":true},"urls":{"assets":"https:\/\/divinissimo.com.br\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/divinissimo.com.br\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/divinissimo.com.br\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"3182b751f9"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_mobile":769,"viewport_tablet":1209,"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal"},"post":{"id":10669,"title":"Contato%20-%20Divin%C3%ADssimo%20%E2%80%A2%20P%C3%A3o%20de%20Queijo%20e%20Salgados%20Congelados%20em%20Minas%20%C3%A9%20Divin%C3%ADssimo.%20Nosso%20%E2%9D%A4%EF%B8%8F%20bate%20por%20voc%C3%AA%21","excerpt":"","featuredImage":false}};
+</script><script src="https://divinissimo.com.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.24.7" id="elementor-frontend-js"></script><script src="https://divinissimo.com.br/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.24.4" id="pro-elements-handlers-js"></script></body>
 </html>
+<!--
+	generated in 0.855 seconds
+	90365 bytes batcached for 300 seconds
+-->
